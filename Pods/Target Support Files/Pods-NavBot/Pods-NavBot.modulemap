@@ -1,0 +1,6 @@
+framework module Pods_NavBot {
+  umbrella header "Pods-NavBot-umbrella.h"
+
+  export *
+  module * { export * }
+}

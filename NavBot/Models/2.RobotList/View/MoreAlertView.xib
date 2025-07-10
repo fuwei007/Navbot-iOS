@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreAlertView" customModule="NavBot" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNg-FI-btK">
+                    <rect key="frame" x="246" y="245" width="360" height="103"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTO-mQ-xiy">
+                            <rect key="frame" x="50" y="24" width="60" height="55"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot_rename" translatesAutoresizingMaskIntoConstraints="NO" id="dVG-wO-M22">
+                                    <rect key="frame" x="16" y="0.0" width="28" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="28" id="4ej-Lx-o44"/>
+                                        <constraint firstAttribute="width" constant="28" id="FYo-Ly-00o"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rename" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3z-5h-RrA">
+                                    <rect key="frame" x="0.0" y="36" width="60.333333333333336" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Q3z-5h-RrA" firstAttribute="centerX" secondItem="BTO-mQ-xiy" secondAttribute="centerX" id="93C-SP-cOa"/>
+                                <constraint firstItem="Q3z-5h-RrA" firstAttribute="top" secondItem="dVG-wO-M22" secondAttribute="bottom" constant="8" id="Bxu-z4-Lxq"/>
+                                <constraint firstAttribute="height" constant="55" id="ge9-IO-Xia"/>
+                                <constraint firstItem="dVG-wO-M22" firstAttribute="top" secondItem="BTO-mQ-xiy" secondAttribute="top" id="k3S-1Y-DQ0"/>
+                                <constraint firstAttribute="width" constant="60" id="nZz-w1-p5g"/>
+                                <constraint firstItem="dVG-wO-M22" firstAttribute="centerX" secondItem="BTO-mQ-xiy" secondAttribute="centerX" id="rBj-GD-O9n"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="w0v-Gg-Rmp" appends="YES" id="eVe-Bk-uTO"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raZ-mf-j4o">
+                            <rect key="frame" x="150" y="24" width="60" height="55"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot_setting" translatesAutoresizingMaskIntoConstraints="NO" id="TrQ-A5-UhE">
+                                    <rect key="frame" x="16" y="0.0" width="28" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="28" id="Wk2-qO-feh"/>
+                                        <constraint firstAttribute="width" constant="28" id="hvD-2X-ET2"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVK-Mb-syK">
+                                    <rect key="frame" x="-1" y="36" width="62" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="rVK-Mb-syK" firstAttribute="centerX" secondItem="raZ-mf-j4o" secondAttribute="centerX" id="0M5-Vv-kjF"/>
+                                <constraint firstItem="rVK-Mb-syK" firstAttribute="top" secondItem="TrQ-A5-UhE" secondAttribute="bottom" constant="8" id="29U-rV-Jwp"/>
+                                <constraint firstItem="TrQ-A5-UhE" firstAttribute="centerX" secondItem="raZ-mf-j4o" secondAttribute="centerX" id="4X0-fu-v2M"/>
+                                <constraint firstAttribute="width" constant="60" id="4f4-Ry-VQI"/>
+                                <constraint firstAttribute="height" constant="55" id="O7J-Ou-ZJG"/>
+                                <constraint firstItem="TrQ-A5-UhE" firstAttribute="top" secondItem="raZ-mf-j4o" secondAttribute="top" id="dT5-Nd-6s7"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="xIS-PW-JAi" appends="YES" id="Isa-7Q-Xwo"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACo-11-N58">
+                            <rect key="frame" x="250" y="24" width="60" height="55"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot_remove" translatesAutoresizingMaskIntoConstraints="NO" id="dla-aB-Lso">
+                                    <rect key="frame" x="16" y="0.0" width="28" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="28" id="5lD-E4-6QD"/>
+                                        <constraint firstAttribute="height" constant="28" id="Gki-f8-6z5"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSD-yg-j6W">
+                                    <rect key="frame" x="0.33333333333331439" y="36" width="59.666666666666664" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <color key="textColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="NSD-yg-j6W" firstAttribute="top" secondItem="dla-aB-Lso" secondAttribute="bottom" constant="8" id="0zk-ba-ZXy"/>
+                                <constraint firstItem="dla-aB-Lso" firstAttribute="top" secondItem="ACo-11-N58" secondAttribute="top" id="9zh-9e-wLJ"/>
+                                <constraint firstItem="NSD-yg-j6W" firstAttribute="centerX" secondItem="ACo-11-N58" secondAttribute="centerX" id="evC-CT-Ngn"/>
+                                <constraint firstAttribute="height" constant="55" id="fTT-uz-E3w"/>
+                                <constraint firstItem="dla-aB-Lso" firstAttribute="centerX" secondItem="ACo-11-N58" secondAttribute="centerX" id="jXf-Ls-WTJ"/>
+                                <constraint firstAttribute="width" constant="60" id="oug-In-E8x"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="Tew-N5-exX" appends="YES" id="N7K-9K-Jt7"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="BTO-mQ-xiy" firstAttribute="centerY" secondItem="QNg-FI-btK" secondAttribute="centerY" id="9CJ-cY-zKO"/>
+                        <constraint firstAttribute="width" constant="360" id="E9s-hL-cPj"/>
+                        <constraint firstItem="ACo-11-N58" firstAttribute="leading" secondItem="raZ-mf-j4o" secondAttribute="trailing" constant="40" id="JH4-B9-jSH"/>
+                        <constraint firstItem="raZ-mf-j4o" firstAttribute="centerX" secondItem="QNg-FI-btK" secondAttribute="centerX" id="O0W-wg-eND"/>
+                        <constraint firstAttribute="height" constant="103" id="bbI-Ed-Xhq"/>
+                        <constraint firstItem="raZ-mf-j4o" firstAttribute="leading" secondItem="BTO-mQ-xiy" secondAttribute="trailing" constant="40" id="ipS-oh-L2Q"/>
+                        <constraint firstItem="raZ-mf-j4o" firstAttribute="centerY" secondItem="QNg-FI-btK" secondAttribute="centerY" id="tuc-ME-TWa"/>
+                        <constraint firstItem="ACo-11-N58" firstAttribute="centerY" secondItem="QNg-FI-btK" secondAttribute="centerY" id="zxb-VB-iez"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="QNg-FI-btK" secondAttribute="bottom" constant="24" id="7eu-6W-htB"/>
+                <constraint firstItem="QNg-FI-btK" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="BHN-Bo-2hW"/>
+            </constraints>
+            <point key="canvasLocation" x="131.69014084507043" y="-12.977099236641221"/>
+        </view>
+        <tapGestureRecognizer id="w0v-Gg-Rmp">
+            <connections>
+                <action selector="clickRenameButton:" destination="-1" id="hiB-Eu-TqE"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="xIS-PW-JAi">
+            <connections>
+                <action selector="clickSettingsButton:" destination="-1" id="yXD-7b-IFB"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Tew-N5-exX">
+            <connections>
+                <action selector="clickRemoveButton:" destination="-1" id="nnh-cW-oR4"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="robot_remove" width="28" height="28"/>
+        <image name="robot_rename" width="28" height="28"/>
+        <image name="robot_setting" width="28" height="28"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

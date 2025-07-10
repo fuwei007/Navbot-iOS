@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanDeviceListVC" customModule="NavBot" customModuleProvider="target">
+            <connections>
+                <outlet property="myTableView" destination="mBV-ug-HYo" id="yZ1-1k-Lgj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mBV-ug-HYo">
+                    <rect key="frame" x="59" y="60" width="793" height="312"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdZ-Af-WQ7">
+                    <rect key="frame" x="59" y="10" width="150" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backIcon" translatesAutoresizingMaskIntoConstraints="NO" id="NxD-Bl-Yo3">
+                            <rect key="frame" x="0.0" y="17.666666666666668" width="15" height="15.000000000000004"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="66R-Jc-2XI"/>
+                                <constraint firstAttribute="height" constant="15" id="9SH-Yy-UgU"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scaning Robot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVZ-1s-p9v">
+                            <rect key="frame" x="25" y="14.666666666666668" width="120" height="21.000000000000004"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="NxD-Bl-Yo3" firstAttribute="centerY" secondItem="xdZ-Af-WQ7" secondAttribute="centerY" id="39i-Eg-CGk"/>
+                        <constraint firstAttribute="height" constant="50" id="A6U-cg-CQG"/>
+                        <constraint firstItem="CVZ-1s-p9v" firstAttribute="leading" secondItem="NxD-Bl-Yo3" secondAttribute="trailing" constant="10" id="HKP-nX-loa"/>
+                        <constraint firstItem="CVZ-1s-p9v" firstAttribute="centerY" secondItem="xdZ-Af-WQ7" secondAttribute="centerY" id="Ih5-sy-QsA"/>
+                        <constraint firstAttribute="width" constant="150" id="bl8-M7-2gR"/>
+                        <constraint firstItem="NxD-Bl-Yo3" firstAttribute="leading" secondItem="xdZ-Af-WQ7" secondAttribute="leading" id="iqu-ul-tsL"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="zOO-im-wY5" appends="YES" id="hRm-Ev-sum"/>
+                    </connections>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mBV-ug-HYo" secondAttribute="bottom" id="1KX-i9-aiS"/>
+                <constraint firstItem="xdZ-Af-WQ7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Pu-LT-46g"/>
+                <constraint firstItem="mBV-ug-HYo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2vA-lz-mgf"/>
+                <constraint firstAttribute="trailing" secondItem="mBV-ug-HYo" secondAttribute="trailing" id="M87-3y-TSY"/>
+                <constraint firstItem="xdZ-Af-WQ7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="UGC-aS-FRw"/>
+                <constraint firstItem="mBV-ug-HYo" firstAttribute="top" secondItem="xdZ-Af-WQ7" secondAttribute="bottom" id="ZvO-df-2VI"/>
+            </constraints>
+            <point key="canvasLocation" x="131.69014084507043" y="-12.977099236641221"/>
+        </view>
+        <tapGestureRecognizer id="zOO-im-wY5">
+            <connections>
+                <action selector="clickBackTap:" destination="-1" id="iev-gN-dxd"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="backIcon" width="9" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
