@@ -7,11 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90D5E182E53073B008F4787 /* GetDeviceInfoBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90D5E172E53073B008F4787 /* GetDeviceInfoBluetoothManager.swift */; };
 		A9205DDD2DE568F300F304D1 /* JumpBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9205DDC2DE568F300F304D1 /* JumpBluetoothManager.swift */; };
 		A9205DE12DE5A83400F304D1 /* ChangePositionBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9205DE02DE5A83400F304D1 /* ChangePositionBluetoothManager.swift */; };
+		A9273B582E2794E2007605D8 /* FaceItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273B552E2794E2007605D8 /* FaceItemsCell.swift */; };
+		A9273B592E2794E2007605D8 /* FaceItemsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273B572E2794E2007605D8 /* FaceItemsContentView.swift */; };
+		A9273B5A2E2794E2007605D8 /* FaceItemsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9273B562E2794E2007605D8 /* FaceItemsCell.xib */; };
+		A947C1522E547A8D00F65BC9 /* SetDeviceNameBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A947C1512E547A8D00F65BC9 /* SetDeviceNameBluetoothManager.swift */; };
 		A94A782F2DF7CDF1003286EF /* StandbyBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A782E2DF7CDF1003286EF /* StandbyBluetoothManager.swift */; };
+		A954CBED2E557B5E004AD52C /* Calibrate.gif in Resources */ = {isa = PBXBuildFile; fileRef = A954CBEC2E557B5E004AD52C /* Calibrate.gif */; };
+		A954CBF42E557C1C004AD52C /* CalibrateSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954CBF22E557C1C004AD52C /* CalibrateSuccessView.swift */; };
+		A954CBF52E557C1C004AD52C /* CalibrateSuccessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A954CBF32E557C1C004AD52C /* CalibrateSuccessView.xib */; };
+		A954CBFB2E557DB5004AD52C /* OnServoBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954CBFA2E557DB5004AD52C /* OnServoBluetoothManager.swift */; };
+		A954CBFF2E559E81004AD52C /* OffServoBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954CBFE2E559E81004AD52C /* OffServoBluetoothManager.swift */; };
+		A954CC012E559E9E004AD52C /* CalibrateServoBuluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954CC002E559E9E004AD52C /* CalibrateServoBuluetoothManager.swift */; };
+		A954CC072E55B282004AD52C /* SetWifiBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954CC062E55B282004AD52C /* SetWifiBluetoothManager.swift */; };
+		A955663B2E6039AF00EBA9CE /* SaveCloudTokenBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A955663A2E6039AF00EBA9CE /* SaveCloudTokenBluetoothManager.swift */; };
+		A955663D2E603A4B00EBA9CE /* SaveOpenAITokenBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A955663C2E603A4B00EBA9CE /* SaveOpenAITokenBluetoothManager.swift */; };
+		A95566412E60417C00EBA9CE /* GetExpressionBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95566402E60417C00EBA9CE /* GetExpressionBluetoothManager.swift */; };
 		A958E5B42DE0695F000F72DF /* BaseHeightBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958E5B32DE0695F000F72DF /* BaseHeightBluetoothManager.swift */; };
+		A96A0E3D2E1FACB10090E885 /* ChangeTextFieldAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A0E3B2E1FACB10090E885 /* ChangeTextFieldAlertView.swift */; };
+		A96A0E3E2E1FACB10090E885 /* ChangeTextFieldAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96A0E3C2E1FACB10090E885 /* ChangeTextFieldAlertView.xib */; };
+		A976A4AE2E5563130086AACB /* Entention+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976A4AD2E5563130086AACB /* Entention+String.swift */; };
+		A976A4B52E5565BE0086AACB /* DeleteDeviceAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A976A4B42E5565BE0086AACB /* DeleteDeviceAlertView.xib */; };
+		A976A4B62E5565BE0086AACB /* DeleteDeviceAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976A4B32E5565BE0086AACB /* DeleteDeviceAlertView.swift */; };
+		A976A4D52E5576D20086AACB /* CalibrateFirstStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A976A4D22E5576D20086AACB /* CalibrateFirstStepView.xib */; };
+		A976A4D62E5576D20086AACB /* CalibrateSecondStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A976A4D42E5576D20086AACB /* CalibrateSecondStepView.xib */; };
+		A976A4D72E5576D20086AACB /* CalibrateFirstStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976A4D12E5576D20086AACB /* CalibrateFirstStepView.swift */; };
+		A976A4D82E5576D20086AACB /* CalibrateSecondStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976A4D32E5576D20086AACB /* CalibrateSecondStepView.swift */; };
 		A980C7DE2DD728920033296D /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A980C7DD2DD728920033296D /* BluetoothManager.swift */; };
+		A989A8932E684294007BA814 /* Bored.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8832E684294007BA814 /* Bored.gif */; };
+		A989A8942E684294007BA814 /* Dizzy.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8852E684294007BA814 /* Dizzy.gif */; };
+		A989A8952E684294007BA814 /* Left.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8882E684294007BA814 /* Left.gif */; };
+		A989A8962E684294007BA814 /* Relaxed.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A88A2E684294007BA814 /* Relaxed.gif */; };
+		A989A8972E684294007BA814 /* Sad.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A88E2E684294007BA814 /* Sad.gif */; };
+		A989A8982E684294007BA814 /* Retreat.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A88B2E684294007BA814 /* Retreat.gif */; };
+		A989A8992E684294007BA814 /* Standby-Doze.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8902E684294007BA814 /* Standby-Doze.gif */; };
+		A989A89A2E684294007BA814 /* Standby-Look.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8912E684294007BA814 /* Standby-Look.gif */; };
+		A989A89B2E684294007BA814 /* Pained.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8892E684294007BA814 /* Pained.gif */; };
+		A989A89C2E684294007BA814 /* Standby-Blink.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A88F2E684294007BA814 /* Standby-Blink.gif */; };
+		A989A89D2E684294007BA814 /* Cray.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8842E684294007BA814 /* Cray.gif */; };
+		A989A89E2E684294007BA814 /* Infatuate.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8872E684294007BA814 /* Infatuate.gif */; };
+		A989A89F2E684294007BA814 /* Right.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A88C2E684294007BA814 /* Right.gif */; };
+		A989A8A02E684294007BA814 /* Happy.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8862E684294007BA814 /* Happy.gif */; };
+		A989A8A12E684294007BA814 /* z.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8922E684294007BA814 /* z.gif */; };
+		A989A8A22E684294007BA814 /* Rise.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A88D2E684294007BA814 /* Rise.gif */; };
+		A989A8A32E684294007BA814 /* Advance.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8812E684294007BA814 /* Advance.gif */; };
+		A989A8A42E684294007BA814 /* Angry.gif in Resources */ = {isa = PBXBuildFile; fileRef = A989A8822E684294007BA814 /* Angry.gif */; };
+		A98AF53B2E273E1000C03770 /* SelectFaceItemAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98AF53A2E273E1000C03770 /* SelectFaceItemAlertView.swift */; };
+		A9A43CAE2E28871C00F8CA24 /* CalibrateProgressingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A43CAD2E28871C00F8CA24 /* CalibrateProgressingView.swift */; };
+		A9A43CB02E28878700F8CA24 /* CalibrateProgressingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A43CAF2E28878700F8CA24 /* CalibrateProgressingView.xib */; };
+		A9A9ACBA2E5EA04D0044C360 /* ScheduledGetDeviceInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A9ACB92E5EA04D0044C360 /* ScheduledGetDeviceInfoManager.swift */; };
+		A9A9ACBD2E5EA6F80044C360 /* SetEmojiBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A9ACBC2E5EA6F80044C360 /* SetEmojiBluetoothManager.swift */; };
+		A9A9ACC42E5EEAB90044C360 /* RollBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A9ACC32E5EEAB90044C360 /* RollBluetoothManager.swift */; };
+		A9A9ACCB2E5EED1D0044C360 /* LinearVelBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A9ACCA2E5EED1D0044C360 /* LinearVelBluetoothManager.swift */; };
+		A9A9ACCD2E5EED2D0044C360 /* AngularVelBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A9ACCC2E5EED2D0044C360 /* AngularVelBluetoothManager.swift */; };
+		A9A9ACD02E5EFB840044C360 /* WebsocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A9ACCF2E5EFB840044C360 /* WebsocketManager.swift */; };
+		A9BEE92D2E28823E00376A4F /* CalibrateAskAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEE92C2E28823E00376A4F /* CalibrateAskAlertView.swift */; };
+		A9BEE92F2E28825400376A4F /* CalibrateAskAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9BEE92E2E28825400376A4F /* CalibrateAskAlertView.xib */; };
 		A9C3E9362DD70C6400DD4420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C3E92E2DD70C6400DD4420 /* AppDelegate.swift */; };
 		A9C3E9372DD70C6400DD4420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C3E92F2DD70C6400DD4420 /* Assets.xcassets */; };
 		A9C3E9392DD70C6400DD4420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C3E9322DD70C6400DD4420 /* LaunchScreen.storyboard */; };
@@ -41,13 +94,67 @@
 		74B7B525DD8CD0B44816CF8B /* Pods-NavBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavBot.debug.xcconfig"; path = "Target Support Files/Pods-NavBot/Pods-NavBot.debug.xcconfig"; sourceTree = "<group>"; };
 		99AF888254785B2E7EDA539B /* Pods_NavBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08BE064D53D636E5D8D1C0C /* Pods-NavBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavBot.release.xcconfig"; path = "Target Support Files/Pods-NavBot/Pods-NavBot.release.xcconfig"; sourceTree = "<group>"; };
+		A90D5E172E53073B008F4787 /* GetDeviceInfoBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceInfoBluetoothManager.swift; sourceTree = "<group>"; };
 		A9205DDC2DE568F300F304D1 /* JumpBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpBluetoothManager.swift; sourceTree = "<group>"; };
 		A9205DE02DE5A83400F304D1 /* ChangePositionBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePositionBluetoothManager.swift; sourceTree = "<group>"; };
+		A9273B552E2794E2007605D8 /* FaceItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceItemsCell.swift; sourceTree = "<group>"; };
+		A9273B562E2794E2007605D8 /* FaceItemsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceItemsCell.xib; sourceTree = "<group>"; };
+		A9273B572E2794E2007605D8 /* FaceItemsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceItemsContentView.swift; sourceTree = "<group>"; };
+		A947C1512E547A8D00F65BC9 /* SetDeviceNameBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDeviceNameBluetoothManager.swift; sourceTree = "<group>"; };
 		A94A782E2DF7CDF1003286EF /* StandbyBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandbyBluetoothManager.swift; sourceTree = "<group>"; };
+		A954CBEC2E557B5E004AD52C /* Calibrate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Calibrate.gif; sourceTree = "<group>"; };
+		A954CBF22E557C1C004AD52C /* CalibrateSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateSuccessView.swift; sourceTree = "<group>"; };
+		A954CBF32E557C1C004AD52C /* CalibrateSuccessView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalibrateSuccessView.xib; sourceTree = "<group>"; };
+		A954CBFA2E557DB5004AD52C /* OnServoBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnServoBluetoothManager.swift; sourceTree = "<group>"; };
+		A954CBFE2E559E81004AD52C /* OffServoBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffServoBluetoothManager.swift; sourceTree = "<group>"; };
+		A954CC002E559E9E004AD52C /* CalibrateServoBuluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateServoBuluetoothManager.swift; sourceTree = "<group>"; };
+		A954CC042E55A9F0004AD52C /* NavBot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavBot.entitlements; sourceTree = "<group>"; };
+		A954CC062E55B282004AD52C /* SetWifiBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetWifiBluetoothManager.swift; sourceTree = "<group>"; };
+		A955663A2E6039AF00EBA9CE /* SaveCloudTokenBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCloudTokenBluetoothManager.swift; sourceTree = "<group>"; };
+		A955663C2E603A4B00EBA9CE /* SaveOpenAITokenBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOpenAITokenBluetoothManager.swift; sourceTree = "<group>"; };
+		A95566402E60417C00EBA9CE /* GetExpressionBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExpressionBluetoothManager.swift; sourceTree = "<group>"; };
 		A958E5B32DE0695F000F72DF /* BaseHeightBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHeightBluetoothManager.swift; sourceTree = "<group>"; };
 		A966119B2DDEF518004DB0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A966119D2DDEF625004DB0E0 /* NavBot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NavBot-Bridging-Header.h"; sourceTree = "<group>"; };
+		A96A0E3B2E1FACB10090E885 /* ChangeTextFieldAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTextFieldAlertView.swift; sourceTree = "<group>"; };
+		A96A0E3C2E1FACB10090E885 /* ChangeTextFieldAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeTextFieldAlertView.xib; sourceTree = "<group>"; };
+		A976A4AD2E5563130086AACB /* Entention+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entention+String.swift"; sourceTree = "<group>"; };
+		A976A4B32E5565BE0086AACB /* DeleteDeviceAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteDeviceAlertView.swift; sourceTree = "<group>"; };
+		A976A4B42E5565BE0086AACB /* DeleteDeviceAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteDeviceAlertView.xib; sourceTree = "<group>"; };
+		A976A4D12E5576D20086AACB /* CalibrateFirstStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateFirstStepView.swift; sourceTree = "<group>"; };
+		A976A4D22E5576D20086AACB /* CalibrateFirstStepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalibrateFirstStepView.xib; sourceTree = "<group>"; };
+		A976A4D32E5576D20086AACB /* CalibrateSecondStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateSecondStepView.swift; sourceTree = "<group>"; };
+		A976A4D42E5576D20086AACB /* CalibrateSecondStepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalibrateSecondStepView.xib; sourceTree = "<group>"; };
 		A980C7DD2DD728920033296D /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		A989A8812E684294007BA814 /* Advance.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Advance.gif; sourceTree = "<group>"; };
+		A989A8822E684294007BA814 /* Angry.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Angry.gif; sourceTree = "<group>"; };
+		A989A8832E684294007BA814 /* Bored.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Bored.gif; sourceTree = "<group>"; };
+		A989A8842E684294007BA814 /* Cray.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cray.gif; sourceTree = "<group>"; };
+		A989A8852E684294007BA814 /* Dizzy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Dizzy.gif; sourceTree = "<group>"; };
+		A989A8862E684294007BA814 /* Happy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Happy.gif; sourceTree = "<group>"; };
+		A989A8872E684294007BA814 /* Infatuate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Infatuate.gif; sourceTree = "<group>"; };
+		A989A8882E684294007BA814 /* Left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Left.gif; sourceTree = "<group>"; };
+		A989A8892E684294007BA814 /* Pained.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Pained.gif; sourceTree = "<group>"; };
+		A989A88A2E684294007BA814 /* Relaxed.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Relaxed.gif; sourceTree = "<group>"; };
+		A989A88B2E684294007BA814 /* Retreat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Retreat.gif; sourceTree = "<group>"; };
+		A989A88C2E684294007BA814 /* Right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Right.gif; sourceTree = "<group>"; };
+		A989A88D2E684294007BA814 /* Rise.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Rise.gif; sourceTree = "<group>"; };
+		A989A88E2E684294007BA814 /* Sad.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Sad.gif; sourceTree = "<group>"; };
+		A989A88F2E684294007BA814 /* Standby-Blink.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Standby-Blink.gif"; sourceTree = "<group>"; };
+		A989A8902E684294007BA814 /* Standby-Doze.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Standby-Doze.gif"; sourceTree = "<group>"; };
+		A989A8912E684294007BA814 /* Standby-Look.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Standby-Look.gif"; sourceTree = "<group>"; };
+		A989A8922E684294007BA814 /* z.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = z.gif; sourceTree = "<group>"; };
+		A98AF53A2E273E1000C03770 /* SelectFaceItemAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFaceItemAlertView.swift; sourceTree = "<group>"; };
+		A9A43CAD2E28871C00F8CA24 /* CalibrateProgressingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateProgressingView.swift; sourceTree = "<group>"; };
+		A9A43CAF2E28878700F8CA24 /* CalibrateProgressingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalibrateProgressingView.xib; sourceTree = "<group>"; };
+		A9A9ACB92E5EA04D0044C360 /* ScheduledGetDeviceInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledGetDeviceInfoManager.swift; sourceTree = "<group>"; };
+		A9A9ACBC2E5EA6F80044C360 /* SetEmojiBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetEmojiBluetoothManager.swift; sourceTree = "<group>"; };
+		A9A9ACC32E5EEAB90044C360 /* RollBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollBluetoothManager.swift; sourceTree = "<group>"; };
+		A9A9ACCA2E5EED1D0044C360 /* LinearVelBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearVelBluetoothManager.swift; sourceTree = "<group>"; };
+		A9A9ACCC2E5EED2D0044C360 /* AngularVelBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularVelBluetoothManager.swift; sourceTree = "<group>"; };
+		A9A9ACCF2E5EFB840044C360 /* WebsocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsocketManager.swift; sourceTree = "<group>"; };
+		A9BEE92C2E28823E00376A4F /* CalibrateAskAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateAskAlertView.swift; sourceTree = "<group>"; };
+		A9BEE92E2E28825400376A4F /* CalibrateAskAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalibrateAskAlertView.xib; sourceTree = "<group>"; };
 		A9C3E9112DD70B8100DD4420 /* NavBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C3E92E2DD70C6400DD4420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9C3E92F2DD70C6400DD4420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,12 +209,166 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A90D5E162E530644008F4787 /* GetDeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A90D5E172E53073B008F4787 /* GetDeviceInfoBluetoothManager.swift */,
+			);
+			path = GetDeviceInfo;
+			sourceTree = "<group>";
+		};
+		A90D5E192E531AF9008F4787 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				A90D5E162E530644008F4787 /* GetDeviceInfo */,
+				A9A9ACB82E5E9FF40044C360 /* ScheduledGetDeviceInfo */,
+				A947C1502E547A6A00F65BC9 /* SetName */,
+				A954CBF62E557D18004AD52C /* Calibrate */,
+				A954CC052E55B25D004AD52C /* SetWifi */,
+				A95566382E60396000EBA9CE /* SaveCloudToken */,
+				A95566392E60396A00EBA9CE /* SaveOpenAIToken */,
+				A955663E2E60412700EBA9CE /* GetExpression */,
+				A9A9ACBB2E5EA6A60044C360 /* ShowExpression */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		A90D5E1A2E531B01008F4787 /* MANEUVER */ = {
+			isa = PBXGroup;
+			children = (
+				A94A782D2DF7CDBA003286EF /* Standby */,
+				A9A9ACC72E5EECA70044C360 /* SetDevice */,
+				A958E5B52DE06D8B000F72DF /* Jump */,
+				A958E5B62DE06DAB000F72DF /* Direction */,
+			);
+			path = MANEUVER;
+			sourceTree = "<group>";
+		};
+		A9201D432E56EE3A0012FDE5 /* 3.1.EN01 */ = {
+			isa = PBXGroup;
+			children = (
+				A9E2CCB72DDDA1610020C5E1 /* DeviceRemoteControlVC.swift */,
+				A9E2CCB82DDDA1610020C5E1 /* DeviceRemoteControlVC.xib */,
+			);
+			path = 3.1.EN01;
+			sourceTree = "<group>";
+		};
+		A9201D442E56EE530012FDE5 /* 3.2.ES02 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3.2.ES02;
+			sourceTree = "<group>";
+		};
+		A9273B542E2794D3007605D8 /* FaceView */ = {
+			isa = PBXGroup;
+			children = (
+				A98AF53A2E273E1000C03770 /* SelectFaceItemAlertView.swift */,
+				A9273B572E2794E2007605D8 /* FaceItemsContentView.swift */,
+				A9273B552E2794E2007605D8 /* FaceItemsCell.swift */,
+				A9273B562E2794E2007605D8 /* FaceItemsCell.xib */,
+			);
+			path = FaceView;
+			sourceTree = "<group>";
+		};
+		A947C1502E547A6A00F65BC9 /* SetName */ = {
+			isa = PBXGroup;
+			children = (
+				A947C1512E547A8D00F65BC9 /* SetDeviceNameBluetoothManager.swift */,
+			);
+			path = SetName;
+			sourceTree = "<group>";
+		};
 		A94A782D2DF7CDBA003286EF /* Standby */ = {
 			isa = PBXGroup;
 			children = (
 				A94A782E2DF7CDF1003286EF /* StandbyBluetoothManager.swift */,
 			);
 			path = Standby;
+			sourceTree = "<group>";
+		};
+		A954CBF62E557D18004AD52C /* Calibrate */ = {
+			isa = PBXGroup;
+			children = (
+				A954CBF82E557D71004AD52C /* OnServo */,
+				A954CBF72E557D57004AD52C /* OffServo */,
+				A954CBF92E557D7E004AD52C /* CalibrateServo */,
+			);
+			path = Calibrate;
+			sourceTree = "<group>";
+		};
+		A954CBF72E557D57004AD52C /* OffServo */ = {
+			isa = PBXGroup;
+			children = (
+				A954CBFE2E559E81004AD52C /* OffServoBluetoothManager.swift */,
+			);
+			path = OffServo;
+			sourceTree = "<group>";
+		};
+		A954CBF82E557D71004AD52C /* OnServo */ = {
+			isa = PBXGroup;
+			children = (
+				A954CBFA2E557DB5004AD52C /* OnServoBluetoothManager.swift */,
+			);
+			path = OnServo;
+			sourceTree = "<group>";
+		};
+		A954CBF92E557D7E004AD52C /* CalibrateServo */ = {
+			isa = PBXGroup;
+			children = (
+				A954CC002E559E9E004AD52C /* CalibrateServoBuluetoothManager.swift */,
+			);
+			path = CalibrateServo;
+			sourceTree = "<group>";
+		};
+		A954CC022E55A13D004AD52C /* ChangeName */ = {
+			isa = PBXGroup;
+			children = (
+				A96A0E3B2E1FACB10090E885 /* ChangeTextFieldAlertView.swift */,
+				A96A0E3C2E1FACB10090E885 /* ChangeTextFieldAlertView.xib */,
+			);
+			path = ChangeName;
+			sourceTree = "<group>";
+		};
+		A954CC032E55A152004AD52C /* DeleteDevice */ = {
+			isa = PBXGroup;
+			children = (
+				A976A4B32E5565BE0086AACB /* DeleteDeviceAlertView.swift */,
+				A976A4B42E5565BE0086AACB /* DeleteDeviceAlertView.xib */,
+			);
+			path = DeleteDevice;
+			sourceTree = "<group>";
+		};
+		A954CC052E55B25D004AD52C /* SetWifi */ = {
+			isa = PBXGroup;
+			children = (
+				A954CC062E55B282004AD52C /* SetWifiBluetoothManager.swift */,
+			);
+			path = SetWifi;
+			sourceTree = "<group>";
+		};
+		A95566382E60396000EBA9CE /* SaveCloudToken */ = {
+			isa = PBXGroup;
+			children = (
+				A955663A2E6039AF00EBA9CE /* SaveCloudTokenBluetoothManager.swift */,
+			);
+			path = SaveCloudToken;
+			sourceTree = "<group>";
+		};
+		A95566392E60396A00EBA9CE /* SaveOpenAIToken */ = {
+			isa = PBXGroup;
+			children = (
+				A955663C2E603A4B00EBA9CE /* SaveOpenAITokenBluetoothManager.swift */,
+			);
+			path = SaveOpenAIToken;
+			sourceTree = "<group>";
+		};
+		A955663E2E60412700EBA9CE /* GetExpression */ = {
+			isa = PBXGroup;
+			children = (
+				A95566402E60417C00EBA9CE /* GetExpressionBluetoothManager.swift */,
+			);
+			path = GetExpression;
 			sourceTree = "<group>";
 		};
 		A958E5B22DE0692C000F72DF /* BaseHeight */ = {
@@ -134,6 +395,23 @@
 			path = Direction;
 			sourceTree = "<group>";
 		};
+		A976A4C32E5570950086AACB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A989A8802E684279007BA814 /* Emoji */,
+				A976A4C42E55709F0086AACB /* GIF */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A976A4C42E55709F0086AACB /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				A954CBEC2E557B5E004AD52C /* Calibrate.gif */,
+			);
+			path = GIF;
+			sourceTree = "<group>";
+		};
 		A980C7DB2DD7286D0033296D /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +420,117 @@
 				A9E2CCB12DDD9EFC0020C5E1 /* 3.RemoteControll */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A989A8802E684279007BA814 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				A989A8812E684294007BA814 /* Advance.gif */,
+				A989A8822E684294007BA814 /* Angry.gif */,
+				A989A8832E684294007BA814 /* Bored.gif */,
+				A989A8842E684294007BA814 /* Cray.gif */,
+				A989A8852E684294007BA814 /* Dizzy.gif */,
+				A989A8862E684294007BA814 /* Happy.gif */,
+				A989A8872E684294007BA814 /* Infatuate.gif */,
+				A989A8882E684294007BA814 /* Left.gif */,
+				A989A8892E684294007BA814 /* Pained.gif */,
+				A989A88A2E684294007BA814 /* Relaxed.gif */,
+				A989A88B2E684294007BA814 /* Retreat.gif */,
+				A989A88C2E684294007BA814 /* Right.gif */,
+				A989A88D2E684294007BA814 /* Rise.gif */,
+				A989A88E2E684294007BA814 /* Sad.gif */,
+				A989A88F2E684294007BA814 /* Standby-Blink.gif */,
+				A989A8902E684294007BA814 /* Standby-Doze.gif */,
+				A989A8912E684294007BA814 /* Standby-Look.gif */,
+				A989A8922E684294007BA814 /* z.gif */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
+		A9A9ACB82E5E9FF40044C360 /* ScheduledGetDeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A9A9ACB92E5EA04D0044C360 /* ScheduledGetDeviceInfoManager.swift */,
+			);
+			path = ScheduledGetDeviceInfo;
+			sourceTree = "<group>";
+		};
+		A9A9ACBB2E5EA6A60044C360 /* ShowExpression */ = {
+			isa = PBXGroup;
+			children = (
+				A9A9ACBC2E5EA6F80044C360 /* SetEmojiBluetoothManager.swift */,
+			);
+			path = ShowExpression;
+			sourceTree = "<group>";
+		};
+		A9A9ACC22E5EEA940044C360 /* Roll */ = {
+			isa = PBXGroup;
+			children = (
+				A9A9ACC32E5EEAB90044C360 /* RollBluetoothManager.swift */,
+			);
+			path = Roll;
+			sourceTree = "<group>";
+		};
+		A9A9ACC52E5EEC080044C360 /* LinearVel */ = {
+			isa = PBXGroup;
+			children = (
+				A9A9ACCA2E5EED1D0044C360 /* LinearVelBluetoothManager.swift */,
+			);
+			path = LinearVel;
+			sourceTree = "<group>";
+		};
+		A9A9ACC62E5EEC9D0044C360 /* AngularVel */ = {
+			isa = PBXGroup;
+			children = (
+				A9A9ACCC2E5EED2D0044C360 /* AngularVelBluetoothManager.swift */,
+			);
+			path = AngularVel;
+			sourceTree = "<group>";
+		};
+		A9A9ACC72E5EECA70044C360 /* SetDevice */ = {
+			isa = PBXGroup;
+			children = (
+				A958E5B22DE0692C000F72DF /* BaseHeight */,
+				A9A9ACC22E5EEA940044C360 /* Roll */,
+				A9A9ACC52E5EEC080044C360 /* LinearVel */,
+				A9A9ACC62E5EEC9D0044C360 /* AngularVel */,
+			);
+			path = SetDevice;
+			sourceTree = "<group>";
+		};
+		A9A9ACCE2E5EFB720044C360 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				A9A9ACCF2E5EFB840044C360 /* WebsocketManager.swift */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		A9BEE92A2E2881F200376A4F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				A9F1395E2E1F5A1C001A5478 /* SettingsVC.swift */,
+				A9F1395F2E1F5A1C001A5478 /* SettingsVC.xib */,
+				A9BEE92B2E28820000376A4F /* Calibrate */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		A9BEE92B2E28820000376A4F /* Calibrate */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEE92C2E28823E00376A4F /* CalibrateAskAlertView.swift */,
+				A9BEE92E2E28825400376A4F /* CalibrateAskAlertView.xib */,
+				A976A4D12E5576D20086AACB /* CalibrateFirstStepView.swift */,
+				A976A4D22E5576D20086AACB /* CalibrateFirstStepView.xib */,
+				A976A4D32E5576D20086AACB /* CalibrateSecondStepView.swift */,
+				A976A4D42E5576D20086AACB /* CalibrateSecondStepView.xib */,
+				A9A43CAD2E28871C00F8CA24 /* CalibrateProgressingView.swift */,
+				A9A43CAF2E28878700F8CA24 /* CalibrateProgressingView.xib */,
+				A954CBF22E557C1C004AD52C /* CalibrateSuccessView.swift */,
+				A954CBF32E557C1C004AD52C /* CalibrateSuccessView.xib */,
+			);
+			path = Calibrate;
 			sourceTree = "<group>";
 		};
 		A9C3E9082DD70B8100DD4420 = {
@@ -175,6 +564,7 @@
 		A9C3E9352DD70C6400DD4420 /* NavBot */ = {
 			isa = PBXGroup;
 			children = (
+				A954CC042E55A9F0004AD52C /* NavBot.entitlements */,
 				A9C3E92E2DD70C6400DD4420 /* AppDelegate.swift */,
 				A9C3E92F2DD70C6400DD4420 /* Assets.xcassets */,
 				A9C3E9322DD70C6400DD4420 /* LaunchScreen.storyboard */,
@@ -189,6 +579,8 @@
 		A9C3E93C2DD718E600DD4420 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A9A9ACCE2E5EFB720044C360 /* WebSocket */,
+				A976A4C32E5570950086AACB /* Resource */,
 				A9E2CCB02DDD9EA10020C5E1 /* Extention */,
 				A9E2CCAF2DDD9E8F0020C5E1 /* Bluetooth */,
 				A9E2CCAE2DDD9E870020C5E1 /* CommanDefine */,
@@ -220,10 +612,8 @@
 			children = (
 				A9E9AA542DD732A50069169F /* BluetoothDefine.swift */,
 				A980C7DD2DD728920033296D /* BluetoothManager.swift */,
-				A94A782D2DF7CDBA003286EF /* Standby */,
-				A958E5B22DE0692C000F72DF /* BaseHeight */,
-				A958E5B52DE06D8B000F72DF /* Jump */,
-				A958E5B62DE06DAB000F72DF /* Direction */,
+				A90D5E1A2E531B01008F4787 /* MANEUVER */,
+				A90D5E192E531AF9008F4787 /* JSON */,
 			);
 			path = Bluetooth;
 			sourceTree = "<group>";
@@ -233,6 +623,7 @@
 			children = (
 				A9C3E9442DD722D100DD4420 /* Extention+XIB.swift */,
 				A9E2CCC02DDDD96B0020C5E1 /* Extension+MBProgressHUD.swift */,
+				A976A4AD2E5563130086AACB /* Entention+String.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -240,9 +631,9 @@
 		A9E2CCB12DDD9EFC0020C5E1 /* 3.RemoteControll */ = {
 			isa = PBXGroup;
 			children = (
-				A9E2CCB72DDDA1610020C5E1 /* DeviceRemoteControlVC.swift */,
-				A9E2CCB82DDDA1610020C5E1 /* DeviceRemoteControlVC.xib */,
 				A9E2CCBB2DDDA58C0020C5E1 /* View */,
+				A9201D432E56EE3A0012FDE5 /* 3.1.EN01 */,
+				A9201D442E56EE530012FDE5 /* 3.2.ES02 */,
 			);
 			path = 3.RemoteControll;
 			sourceTree = "<group>";
@@ -251,9 +642,10 @@
 			isa = PBXGroup;
 			children = (
 				A9C3E93A2DD70CC900DD4420 /* RootMenuListVC.swift */,
-				A9F1395E2E1F5A1C001A5478 /* SettingsVC.swift */,
-				A9F1395F2E1F5A1C001A5478 /* SettingsVC.xib */,
 				A9C3E93F2DD71EA500DD4420 /* View */,
+				A954CC022E55A13D004AD52C /* ChangeName */,
+				A954CC032E55A152004AD52C /* DeleteDevice */,
+				A9BEE92A2E2881F200376A4F /* Setting */,
 			);
 			path = 2.RobotList;
 			sourceTree = "<group>";
@@ -272,6 +664,7 @@
 			children = (
 				A9E2CCBC2DDDA8240020C5E1 /* MySliderView.swift */,
 				A9E2CCBE2DDDC52B0020C5E1 /* DirectionalControlView.swift */,
+				A9273B542E2794D3007605D8 /* FaceView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -338,10 +731,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A954CBF52E557C1C004AD52C /* CalibrateSuccessView.xib in Resources */,
 				A9E2CCBA2DDDA1610020C5E1 /* DeviceRemoteControlVC.xib in Resources */,
+				A976A4D52E5576D20086AACB /* CalibrateFirstStepView.xib in Resources */,
+				A976A4D62E5576D20086AACB /* CalibrateSecondStepView.xib in Resources */,
+				A9A43CB02E28878700F8CA24 /* CalibrateProgressingView.xib in Resources */,
+				A9BEE92F2E28825400376A4F /* CalibrateAskAlertView.xib in Resources */,
+				A976A4B52E5565BE0086AACB /* DeleteDeviceAlertView.xib in Resources */,
 				A9F139602E1F5A1C001A5478 /* SettingsVC.xib in Resources */,
 				A9C3E9372DD70C6400DD4420 /* Assets.xcassets in Resources */,
+				A954CBED2E557B5E004AD52C /* Calibrate.gif in Resources */,
+				A9273B5A2E2794E2007605D8 /* FaceItemsCell.xib in Resources */,
 				A9C3E9392DD70C6400DD4420 /* LaunchScreen.storyboard in Resources */,
+				A96A0E3E2E1FACB10090E885 /* ChangeTextFieldAlertView.xib in Resources */,
+				A989A8932E684294007BA814 /* Bored.gif in Resources */,
+				A989A8942E684294007BA814 /* Dizzy.gif in Resources */,
+				A989A8952E684294007BA814 /* Left.gif in Resources */,
+				A989A8962E684294007BA814 /* Relaxed.gif in Resources */,
+				A989A8972E684294007BA814 /* Sad.gif in Resources */,
+				A989A8982E684294007BA814 /* Retreat.gif in Resources */,
+				A989A8992E684294007BA814 /* Standby-Doze.gif in Resources */,
+				A989A89A2E684294007BA814 /* Standby-Look.gif in Resources */,
+				A989A89B2E684294007BA814 /* Pained.gif in Resources */,
+				A989A89C2E684294007BA814 /* Standby-Blink.gif in Resources */,
+				A989A89D2E684294007BA814 /* Cray.gif in Resources */,
+				A989A89E2E684294007BA814 /* Infatuate.gif in Resources */,
+				A989A89F2E684294007BA814 /* Right.gif in Resources */,
+				A989A8A02E684294007BA814 /* Happy.gif in Resources */,
+				A989A8A12E684294007BA814 /* z.gif in Resources */,
+				A989A8A22E684294007BA814 /* Rise.gif in Resources */,
+				A989A8A32E684294007BA814 /* Advance.gif in Resources */,
+				A989A8A42E684294007BA814 /* Angry.gif in Resources */,
 				A9E9ABBB2DD73D920069169F /* SearchingDeviceCell.xib in Resources */,
 				A9E9AB5F2DD739510069169F /* ScanDeviceListVC.xib in Resources */,
 				A9FAA72C2E1DF9E600EA2E7F /* MoreAlertView.xib in Resources */,
@@ -398,25 +818,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98AF53B2E273E1000C03770 /* SelectFaceItemAlertView.swift in Sources */,
 				A9F139612E1F5A1C001A5478 /* SettingsVC.swift in Sources */,
 				A9C3E9452DD722D100DD4420 /* Extention+XIB.swift in Sources */,
+				A90D5E182E53073B008F4787 /* GetDeviceInfoBluetoothManager.swift in Sources */,
+				A947C1522E547A8D00F65BC9 /* SetDeviceNameBluetoothManager.swift in Sources */,
+				A955663D2E603A4B00EBA9CE /* SaveOpenAITokenBluetoothManager.swift in Sources */,
 				A9E2CCBF2DDDC52B0020C5E1 /* DirectionalControlView.swift in Sources */,
 				A9C3E9362DD70C6400DD4420 /* AppDelegate.swift in Sources */,
+				A9BEE92D2E28823E00376A4F /* CalibrateAskAlertView.swift in Sources */,
+				A9A43CAE2E28871C00F8CA24 /* CalibrateProgressingView.swift in Sources */,
 				A9E2CCB92DDDA1610020C5E1 /* DeviceRemoteControlVC.swift in Sources */,
+				A9A9ACBA2E5EA04D0044C360 /* ScheduledGetDeviceInfoManager.swift in Sources */,
 				A9C3E93E2DD7190000DD4420 /* CommanDefine.swift in Sources */,
 				A9E2CCC12DDDD96B0020C5E1 /* Extension+MBProgressHUD.swift in Sources */,
+				A9A9ACCB2E5EED1D0044C360 /* LinearVelBluetoothManager.swift in Sources */,
 				A9E9AA552DD732A50069169F /* BluetoothDefine.swift in Sources */,
+				A95566412E60417C00EBA9CE /* GetExpressionBluetoothManager.swift in Sources */,
+				A9A9ACBD2E5EA6F80044C360 /* SetEmojiBluetoothManager.swift in Sources */,
 				A9205DDD2DE568F300F304D1 /* JumpBluetoothManager.swift in Sources */,
 				A9C3E93B2DD70CC900DD4420 /* RootMenuListVC.swift in Sources */,
 				A980C7DE2DD728920033296D /* BluetoothManager.swift in Sources */,
+				A954CC072E55B282004AD52C /* SetWifiBluetoothManager.swift in Sources */,
+				A954CBF42E557C1C004AD52C /* CalibrateSuccessView.swift in Sources */,
+				A954CC012E559E9E004AD52C /* CalibrateServoBuluetoothManager.swift in Sources */,
+				A9A9ACC42E5EEAB90044C360 /* RollBluetoothManager.swift in Sources */,
+				A96A0E3D2E1FACB10090E885 /* ChangeTextFieldAlertView.swift in Sources */,
 				A9FAA7312E1DFA2600EA2E7F /* MoreAlertView.swift in Sources */,
 				A9E9ABBA2DD73D920069169F /* SearchingDeviceCell.swift in Sources */,
 				A94A782F2DF7CDF1003286EF /* StandbyBluetoothManager.swift in Sources */,
 				A9205DE12DE5A83400F304D1 /* ChangePositionBluetoothManager.swift in Sources */,
+				A954CBFF2E559E81004AD52C /* OffServoBluetoothManager.swift in Sources */,
+				A9273B582E2794E2007605D8 /* FaceItemsCell.swift in Sources */,
+				A9273B592E2794E2007605D8 /* FaceItemsContentView.swift in Sources */,
+				A9A9ACCD2E5EED2D0044C360 /* AngularVelBluetoothManager.swift in Sources */,
+				A976A4AE2E5563130086AACB /* Entention+String.swift in Sources */,
+				A976A4D72E5576D20086AACB /* CalibrateFirstStepView.swift in Sources */,
+				A976A4D82E5576D20086AACB /* CalibrateSecondStepView.swift in Sources */,
 				A958E5B42DE0695F000F72DF /* BaseHeightBluetoothManager.swift in Sources */,
+				A976A4B62E5565BE0086AACB /* DeleteDeviceAlertView.swift in Sources */,
+				A954CBFB2E557DB5004AD52C /* OnServoBluetoothManager.swift in Sources */,
 				A9C3E9432DD71EBE00DD4420 /* DeviceCell.swift in Sources */,
+				A955663B2E6039AF00EBA9CE /* SaveCloudTokenBluetoothManager.swift in Sources */,
 				A9E2CCBD2DDDA8240020C5E1 /* MySliderView.swift in Sources */,
 				A9E9AB5E2DD739510069169F /* ScanDeviceListVC.swift in Sources */,
+				A9A9ACD02E5EFB840044C360 /* WebsocketManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,12 +887,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NavBot/NavBot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = 65GGU7L5YK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NavBot/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This application requires access to Bluetooth in order to communicate with nearby devices";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Get your wifi information.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Get your wifi information.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -461,11 +910,14 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.navbot.dev1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "NavBot/NavBot-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,12 +928,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NavBot/NavBot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = 65GGU7L5YK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NavBot/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This application requires access to Bluetooth in order to communicate with nearby devices";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Get your wifi information.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Get your wifi information.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -496,10 +951,13 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.navbot.dev1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "NavBot/NavBot-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

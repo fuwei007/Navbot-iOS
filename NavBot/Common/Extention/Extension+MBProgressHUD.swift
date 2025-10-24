@@ -8,6 +8,8 @@ let HUD_Duration_Short = 0.5
 let HUD_Duration_Success = 1.0
 let HUD_Duration_Long_fail = 10.0
 
+let HUD_Duration_Normal_Long = 5.0
+
 typealias MBSuccessBlock = ()->()
 
 extension MBProgressHUD {
@@ -81,7 +83,7 @@ extension MBProgressHUD {
                     if hud.isHidden == false{
                         print("Request timed out, auto-hide.")
                         nowHiddenMBProgressHUD(hud)
-                        MBProgressHUD.showErrorText(text: "Request Data Timeout", view: view)
+                        //MBProgressHUD.showErrorText(text: "Request Data Timeout", view: view)
                     }
                 }
             }
@@ -175,6 +177,15 @@ extension MBProgressHUD {
                 }
             }
         }
+    }
+    
+    class func showTitleAndSubTitleLongTime(title: String, subTitle: String, view: UIView){
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud.isUserInteractionEnabled = false
+        hud.mode = .text
+        hud.label.text = title
+        hud.detailsLabel.text = subTitle
+        hud.hide(animated: true, afterDelay: HUD_Duration_Normal_Long)
     }
     
 }

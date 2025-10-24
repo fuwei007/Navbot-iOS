@@ -125,3 +125,11 @@ func getRandomDigitsString() -> String {
     return result
 }
 
+//Json-->Dict
+func jsonStringToDict(_ jsonString: String) -> [String: Any]? {
+    guard let data = jsonString.data(using: .utf8) else { return nil }
+    if let dict = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+        return dict
+    }
+    return nil
+}

@@ -35,3 +35,14 @@ func convertDecimalToHexadecimal16(decimalBytes: [Int16]) -> [String]{
     return byteArrStr
 }
 
+func encodeLinear(_ linear: Int16) -> (UInt8, UInt8) {
+    if linear < -200 || linear > 200{
+        return (0, 0)
+    }
+    // Int16 -> UInt16，方便拆高低字节
+    let value = UInt16(bitPattern: linear)
+    // 拆高低字节
+    let linear_H = UInt8((value >> 8) & 0xFF)  // 高 8 位
+    let linear_L = UInt8(value & 0xFF)         // 低 8 位
+    return (linear_H, linear_L)
+}

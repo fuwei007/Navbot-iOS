@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalibrateSuccessView" customModule="NavBot" customModuleProvider="target">
+            <connections>
+                <outlet property="successView" destination="jtW-GP-HRs" id="kxu-O7-Jmj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtW-GP-HRs">
+                    <rect key="frame" x="352" y="139" width="148" height="94"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calibrate_success" translatesAutoresizingMaskIntoConstraints="NO" id="JHU-aV-XIz">
+                            <rect key="frame" x="44" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="WBu-lh-4D3"/>
+                                <constraint firstAttribute="width" constant="60" id="f4u-wS-eiA"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calibration Successful" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebB-X7-2YE">
+                            <rect key="frame" x="0.0" y="77" width="148" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="148" id="PaL-di-RZq"/>
+                        <constraint firstItem="JHU-aV-XIz" firstAttribute="top" secondItem="jtW-GP-HRs" secondAttribute="top" id="h38-4e-gdl"/>
+                        <constraint firstItem="ebB-X7-2YE" firstAttribute="leading" secondItem="jtW-GP-HRs" secondAttribute="leading" id="ihY-mj-VUn"/>
+                        <constraint firstAttribute="trailing" secondItem="ebB-X7-2YE" secondAttribute="trailing" id="la8-I7-4gr"/>
+                        <constraint firstAttribute="bottom" secondItem="ebB-X7-2YE" secondAttribute="bottom" id="mYI-He-FUU"/>
+                        <constraint firstAttribute="height" constant="94" id="wbH-PN-HyN"/>
+                        <constraint firstItem="JHU-aV-XIz" firstAttribute="centerX" secondItem="jtW-GP-HRs" secondAttribute="centerX" id="yEG-gV-PQA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jtW-GP-HRs" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="KAR-Vo-8RO"/>
+                <constraint firstItem="jtW-GP-HRs" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="nV1-uH-Czt"/>
+            </constraints>
+            <point key="canvasLocation" x="131.69014084507043" y="-11.450381679389313"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calibrate_success" width="60" height="60"/>
+    </resources>
+</document>

@@ -49,20 +49,29 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
     
     //现在是在那个页面操作：
     var fromVCType = ""
+    
 
     //MARK: 1.初始化-单例
     static let shared = BluetoothManager()
     private override init(){
         super.init()
         print("初始化单例-实例对象：BluetoothManager")
+        centralManager = CBCentralManager.init(delegate: self, queue: DispatchQueue.main)
     }
     
     //MARK: 2.开始扫描设备
     func startScanBluetoothDevice(type: String){
-        fromVCType = type
+        // 停止上一次扫描
+        stopScanBluetoothDevice()
+        // 清空设备列表
         allScanedDevices = [[String: Any]]()
+        // 页面标记
+        fromVCType = type
         print("开始扫描设备:\(type)")
-        centralManager = CBCentralManager.init(delegate: self, queue: DispatchQueue.main)
+        // 停止后重新开始会重新扫描所有设备
+        centralManager.scanForPeripherals(withServices: nil)
+        // 扫描状态标记
+        isScanning = true
     }
     //停止扫描
     func stopScanBluetoothDevice(){
@@ -81,6 +90,15 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
             print("蓝牙权限未授权")
         case .poweredOff:
             print("蓝牙是关闭状态，需要打开才能连接蓝牙外设")
+            //手机主动断开蓝牙设备后，会走此回调：
+            if device_connected_status == .connected,
+               current_connecting_CBPeripheral != nil{
+                //(1).需要断开设备链接：
+                disconnectDevice()
+                //(2).在未链接蓝牙的情况下，不会走“断开连接”的回调，需要手动去触发方法
+                self.delegate?.disconnectDevice(device: current_connecting_CBPeripheral!)
+            }
+
         case .poweredOn:
             print("蓝牙已开启，允许连接蓝牙外设")
             //(2).扫描设备
@@ -96,6 +114,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         guard let device_name = peripheral.name else{return}
         //print("扫描到新设备：\(device_name), RSSI:\(getDistance(RSSI: RSSI))")
+        //print("扫描到新设备：\(device_name)")
         var isExistInArray = false
         var isExistInArray_index: Int?
         for (index, value) in allScanedDevices.enumerated(){
@@ -268,6 +287,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
         if dataType.count == 0{
             return false
         }
+        //6.
         
         //6.开始写入数据
         //写入最大数据的长度 每次发送20个数据
@@ -288,11 +308,19 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
                 let current_writeData = writeData.subdata(in: index..<(writeData.count))
                 //current_connecting_CBPeripheral!.writeValue(current_writeData, for: current_connecting_write_character!, type: .withResponse)
                 current_connecting_CBPeripheral!.writeValue(current_writeData, for: current_connecting_write_character!, type: .withResponse)
+                
+                let byteArray: [UInt8] = [UInt8](current_writeData)
+                let comand_Hexadecimal = convertDecimalToHexadecimal(decimalBytes: byteArray)
+                //print("本次尝试写入数据:",comand_Hexadecimal)
                 break
             }else{
                 let current_writeData = writeData.subdata(in: index..<(index+maxLength))
                 //self.current_connecting_CBPeripheral!.writeValue(current_writeData, for: current_connecting_write_character!, type: .withResponse)
                 self.current_connecting_CBPeripheral!.writeValue(current_writeData, for: current_connecting_write_character!, type: .withResponse)
+                
+                let byteArray: [UInt8] = [UInt8](current_writeData)
+                let comand_Hexadecimal = convertDecimalToHexadecimal(decimalBytes: byteArray)
+                //print("本次尝试写入数据:",comand_Hexadecimal)
                 index += maxLength
             }
         }
@@ -388,8 +416,6 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
         }
     }
     
-    
-    
     //MARK: 7.处理没有页面接收的数据--设备主动发送的数据
     func handleDataFromDeviceOfNotType(allData: [UInt8]){
         print("========================")
@@ -399,7 +425,51 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
         print("处理没有页面接收的数据--设备主动发送的数据:\(allReceiveData_bytes.count)")
         print("处理没有页面接收的数据--设备主动发送的数据:\(allReceiveData_ASII)")
         print("========================")
+        
+        //2.1.获取Content内容: 每个包的Byte 6 ～～～Byte 20:
+        var all_content_bytes = [UInt8]()
+        var recieve_package_number = 0
+        if (allReceiveData_bytes.count%20 == 0){
+            recieve_package_number = allReceiveData_bytes.count/20 + 1
+        }else{
+            recieve_package_number = allReceiveData_bytes.count/20 + 1
+        }
+        for i in 0..<recieve_package_number{
+            for j in 5+i*20..<20+i*20{
+                if j < allReceiveData_bytes.count{
+                    all_content_bytes.append(allReceiveData_bytes[j])
+                }
+            }
+        }
+        
+        //2.2.过滤掉尾部多余的 0x0 （可选）
+        all_content_bytes = all_content_bytes.filter { $0 != 0x0 }
+        //let allReceiveData_ASII2 = convertDecimalToHexadecimal(decimalBytes: all_content_bytes)
+        //print("SetWifi--收到的数据2:\(allReceiveData_ASII2)")
+        
+        //2.3.解析正文数据--JSON字符串
+        let jsonData = Data(all_content_bytes)
+        if let jsonString = String(data: jsonData, encoding: .utf8) {
+            print("解析出的JSON字符串:", jsonString)
+        } else {
+            print("无法解析成UTF-8字符串")
+            //NotificationCenter.default.post(name: Notification.Name(rawValue: "SetEmoji_fail"), object: nil)
+            //return
+        }
+        // 2.4.解析正文数据--字典
+        if let dict = try? JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any] {
+            print("解析成字典:", dict)
+            //return
+        }else {
+            print("无法解析成字典")
+        }
     }
+    
+    func handleJsonReslutFromDeviceOfNotType(resultDict: [String: Any]){
+        
+    }
+    
+    
 }
 
 

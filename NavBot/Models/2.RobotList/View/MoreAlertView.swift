@@ -30,14 +30,14 @@ class MoreAlertView: UIView {
     }
     @objc func clickCloseFunc(tap: UITapGestureRecognizer){
         let tapPoint = tap.location(in: self)
-        let contentFrame = CGRect(x: kScreen_HEIGHT/2-360/2, y: kScreen_HEIGHT-24-103, width: 360, height: 103)
+        let contentFrame = CGRect(x: kScreen_WIDTH/2-360/2, y: kScreen_HEIGHT-24-103, width: 360, height: 103)
         if contentFrame.contains(tapPoint) {
             return
         }else{
             self.removeFromSuperview()
         }
     }
-    
+
     @IBAction func clickRenameButton(_ sender: Any) {
         self.removeFromSuperview()
         clickRenameBlock?()
